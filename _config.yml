@@ -6,3 +6,5 @@ markdown:    rdiscount
 permalink:   date
 rdiscount:
   extensions: [smart]
+tags:
+- story
