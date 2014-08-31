@@ -6,5 +6,5 @@ markdown:    rdiscount
 permalink:   date
 rdiscount:
   extensions: [smart]
-tags:
-- story
+
+title: 王泓钦的blog
