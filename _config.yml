@@ -2,9 +2,9 @@ destination: ./_site
 lsi:         false
 port:        4000
 highligher:  true
-markdown:    rdiscount
+markdown:    kramdown
 permalink:   date
 rdiscount:
-  extensions: [smart]
+  input: GFM
 
 title: 王泓钦的blog
