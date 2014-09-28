@@ -1,6 +1,16 @@
 ---
-layout: default
+layout: post
 ---
 
-<img src="images/cover.jpg" alt="color photo ftl" />
+<!-- <img src="images/cover.jpg" alt="color photo ftl" /> -->
+
+
+{% for post in site.posts %}
+  <small>{{ post.date | date_to_string }}</small>
+  <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+  <article>
+    {{ post.content | truncatewords:15 }}
+  </article>
+  <hr/>
+{% endfor %}
 
