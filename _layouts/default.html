@@ -5,88 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ site.title }}</title>
 
-    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css">
-    <style>
-      header { zoom: 1.2; }
-      header h1 { margin-bottom: 5px; }
-      header h1 a { color: #494949; font-weight: bold; }
-      header h3 { margin-top: 20px; margin-bottom: 5px; }
-      header p.view { margin-bottom: 5px; }
-      header p.view small { padding-top: 2px; }
-      header ul {
-        zoom: 0.7;
-        margin-top: 25px;
-      }
-      section p { margin-top: 10px; }
-      section h1 { margin-bottom: 15px; }
-      section h2 { margin-bottom: 10px; }
-      section h2 { margin-bottom: 10px; }
-      footer { bottom: 20px; }
-      footer p { margin-bottom: 5px; }
-      .half-width {
-        float: left;
-        width: 200px;
-        list-style: none;
-        padding: 5px;
-        margin: 7px;
-        margin-bottom: 10px;
-      }
-      .half-width h4 {
-        margin-bottom: 5px;
-      }
-      .half-width ul {
-        padding-left: 0;
-      }
-      .half-width ul li {
-        list-style: inside;
-        font-size: 15px;
-      }
-      .clear-fix {
-        clear: both;
-      }
-    </style>
-    <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/sticky-footer.css">
+    <link rel="stylesheet" href="/css/common.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="/">王泓钦</a></h1>
-        <h3> Posts</h3>
-        <p class="view"><a href="/story.html">Story</a></p>
-        <p class="view"><a href="/reading.html">Reading</a></p>
+  <body style="margin-top: 50px">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 pull-left">
+          <h1><a href="/">王泓钦</a></h1>
+          <h3> Posts</h3>
+          <p class="view"><a href="/story.html">Story</a></p>
+          <p class="view"><a href="/reading.html">Reading</a></p>
 
-        <h3>I'm also on</h3>
-        <p class="view"><a href="https://github.com/hqwrong" target="tab">GitHub</a></li>
-        <p class="view"><a href="http://www.douban.com/people/61430577/" target="tab">豆瓣</a></li>
+          <h3>I'm also on</h3>
+          <p class="view"><a href="https://github.com/hqwrong" target="tab">GitHub</a>
+          <p class="view"><a href="http://www.douban.com/people/61430577/" target="tab">豆瓣</a>
+        </div>
 
-      </header>
-      <section id="main">
-        {{ content }}
-      </section>
-      <footer>
-        <p>
-          <small>
-            Hosted on <a href="http://pages.github.com">GitHub Pages</a> &mdash;
-            powered by <a href="http://jekyllrb.com/"> jekyll</a>
-          </small>
-        </p>
-      </footer>
+        <div class="col-md-7">
+          {{ content }}
+        </div>
+      </div>
     </div>
 
-    <script type="text/javascript">
-      var _gauges = _gauges || [];
-      (function() {
-        var t   = document.createElement('script');
-        t.type  = 'text/javascript';
-        t.async = true;
-        t.id    = 'gauges-tracker';
-        t.setAttribute('data-site-id', '4eb74c9f613f5d3567000004');
-        t.src = '//secure.gaug.es/track.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(t, s);
-      })();
-    </script>
-    <script src="js/libs/jquery-1.6.2.min.js"></script>
+    <div class="footer" align="center"> <!-- use bootstrap footer -->
+      <small class="text-muted">
+        Hosted on <a href="http://pages.github.com">GitHub Pages</a> &mdash;
+        powered by <a href="http://jekyllrb.com/"> jekyll</a>
+      </small>
+    </div>
   </body>
 </html>
