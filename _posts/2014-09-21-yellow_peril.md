@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 悲壮与沉痛 -- 读<黄祸>
+title: 悲壮与沉痛 -- <黄祸>
 tags: reading
 ---
 

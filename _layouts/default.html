@@ -1,48 +1,20 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <title>{{ site.title }}</title>
+---
+layout: common
+---
 
-    <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed"/>
+<div class="col-md-4 pull-left">
+  <h1><a href="/">王泓钦</a></h1>
+  <h3> Posts</h3>
+  <p class="view"><a href="/story.html">Story</a></p>
+  <p class="view"><a href="/reading.html">Reading</a></p>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/sticky-footer.css" />
-    <link rel="stylesheet" href="/css/common.css" />
+  <h3>I'm also on</h3>
+  <p class="view"><a href="https://github.com/hqwrong" target="tab">GitHub</a>
+  <p class="view"><a href="http://www.douban.com/people/61430577/" target="tab">豆瓣</a>
+    <hr/>
+  <p><a href="/atom.xml">订阅(Atom)</a></p>
+</div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/libs/bootstrap.min.js"> </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-
-  </head>
-  <body style="margin-top: 50px">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 pull-left">
-          <h1><a href="/">王泓钦</a></h1>
-          <h3> Posts</h3>
-          <p class="view"><a href="/story.html">Story</a></p>
-          <p class="view"><a href="/reading.html">Reading</a></p>
-
-          <h3>I'm also on</h3>
-          <p class="view"><a href="https://github.com/hqwrong" target="tab">GitHub</a>
-          <p class="view"><a href="http://www.douban.com/people/61430577/" target="tab">豆瓣</a>
-            <hr/>
-          <p><a href="/atom.xml">订阅(Atom)</a></p>
-        </div>
-
-        <div class="col-md-7">
-          {{ content }}
-        </div>
-      </div>
-    </div>
-
-    <div class="footer" align="center"> <!-- use bootstrap footer -->
-      <small class="text-muted">
-        Hosted on <a href="http://pages.github.com">GitHub Pages</a> &mdash;
-        powered by <a href="http://jekyllrb.com/"> jekyll</a>
-      </small>
-    </div>
-  </body>
-</html>
+<div class="col-md-7">
+  {{ content }}
+</div>

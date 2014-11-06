@@ -1,27 +1,32 @@
 ---
-layout: default
+layout: common
 ---
 
-<article>
-  <small>{{ page.date | date: "%Y-%m-%d" }}</small>
-  <span class="dropdown" style="float:right">
-    <a data-toggle="dropdown" href="#">分享</a>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-      <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e('http://www.baidu.com')+'&title='+e('{{page.title}}')+'&sel='+e(s)+'&v=1',w=450,h=330,x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width='+w+',height='+h+',left='+(screen.width-w)/2+',top='+(screen.height-h)/2))location.href=r+'&r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"><img src="http://img2.douban.com/pics/fw2douban1.png" alt="豆瓣" /></a>
-      </li>
-    </ul>
-  </span>
+<div class="col-md-10 pagination-centered">
+  <article>
+    <small>{{ page.date | date: "%Y-%m-%d" }}</small>
+    <span class="dropdown" style="float:right">
+      <a data-toggle="dropdown" href="#">分享</a>
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <li> <a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e('http://www.baidu.com')+'&title='+e('{{page.title}}')+'&sel='+e(s)+'&v=1',w=450,h=330,x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width='+w+',height='+h+',left='+(screen.width-w)/2+',top='+(screen.height-h)/2))location.href=r+'&r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"><img src="http://img2.douban.com/pics/fw2douban1.png" alt="豆瓣" /></a>
+        </li>
+      </ul>
+    </span>
 
-  <h1>{{page.title}}</h1>
-  <hr/>
-  {{content}}
-  <hr/>
-  <div id="post-nav" class="clearfix">
+    <a href="#"><h1 style="text-align:center">{{page.title}}</h1></a>
+    <hr/>
+    {{content}}
+    <hr/>
+
+
     {% if page.previous.url %} 
-    <a class="prev" href="{{page.previous.url}}">{{page.previous.title}}</a> 
-    {% endif %} 
+    <a class="col-md-5" href="{{page.previous.url}}">{{page.previous.title}}</a> 
+    {% endif %}
+
+    <a href="/">回首页</a>
+
     {% if page.next.url %} 
-    <a class="next" style="float:right;"href="{{page.next.url}}">{{page.next.title}}</a> 
+    <a style="float:right" href="{{page.next.url}}">{{page.next.title}}</a> 
     {% endif %} 
-  </div>
-</article>
+  </article>
+</div>
