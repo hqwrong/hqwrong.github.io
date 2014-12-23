@@ -6,11 +6,12 @@ $(function(){
     var weixinShareClass = '_share_weixin';
     var isWeixinBrowser = (function(){
         var ua = navigator.userAgent.toLowerCase();
-        if(ua.match(/MicroMessenger/i)=="micromessenger") {
-            return true;
-        } else {
-            return false;
-        }
+        return true;
+        // if(ua.match(/MicroMessenger/i)=="micromessenger") {
+        //     return true;
+        // } else {
+        //     return false;
+        // }
     })();
     if(!isWeixinBrowser) {
         $('.'+weixinShareClass).hide();
