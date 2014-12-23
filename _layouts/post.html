@@ -19,7 +19,6 @@ layout: common
     {{content}}
     <hr/>
 
-
     {% if page.previous.url %} 
     <a class="col-md-5" href="{{page.previous.url}}">{{page.previous.title}}</a> 
     {% endif %}
@@ -30,4 +29,10 @@ layout: common
     <a style="float:right" href="{{page.next.url}}">{{page.next.title}}</a> 
     {% endif %} 
   </article>
+  <div id="qrcode" align="center"> </div>
 </div>
+
+<script>
+  var qrcode = new QRCode(document.getElementById("qrcode"))
+  qrcode.makeCode(document.URL)
+</script>
