@@ -121,7 +121,7 @@ typedef struct UpVal {
 } UpVal;
 {% endhighlight %}
 
-当upvalue值在栈上时，upvalue链在openupvalue上;栈回收后，则链到allgc上，参与垃圾回收。
+当upvalue值在栈上时，upvalue链在openupvalue上; 栈回收后，则从openvalue中去掉，改链到allgc上，参与垃圾回收。
 
 对应代码是*luaF_close*， 
 {% highlight c %}
