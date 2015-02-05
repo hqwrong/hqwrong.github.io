@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 忧郁的老板娘
-tags: poem
+tags: essay
 ---
 
         你有没有试过？
