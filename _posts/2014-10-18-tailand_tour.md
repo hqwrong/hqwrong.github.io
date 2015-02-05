@@ -1,6 +1,7 @@
 ---
 layout:   post
 title:      泰国闲记
+tags: essay
 ---
 
 

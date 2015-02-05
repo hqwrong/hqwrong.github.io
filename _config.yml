@@ -5,7 +5,6 @@ highligher:  true
 markdown:    kramdown
 permalink:   date
 excerpt_separator: "\n\n\n"
-pagenate: 6
 rdiscount:
   input: GFM
 
