@@ -4,8 +4,9 @@ layout: common
 
 <div class="col-md-10 pagination-centered">
   <article>
-    <small>{{ page.date | date: "%Y-%m-%d" }}</small>
-    <span class="dropdown" style="float:right">
+    <small>{{ page.date | date: "%Y-%m-%d" }} | </small>
+    <a href="/">回首页 | </a>
+    <span class="dropdown">
       <a data-toggle="dropdown" class="_share_weixin" href="#">分享</a>
       <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
         <li>
@@ -23,13 +24,13 @@ layout: common
     <hr/>
 
     {% if page.previous.url %} 
-    <a class="col-md-5" href="{{page.previous.url}}">{{page.previous.title}}</a> 
+    <a href="{{page.previous.url}}">{{page.previous.title}}</a> |
     {% endif %}
 
     <a href="/">回首页</a>
 
     {% if page.next.url %} 
-    <a style="float:right" href="{{page.next.url}}">{{page.next.title}}</a> 
+    | <a href="{{page.next.url}}">{{page.next.title}}</a> 
     {% endif %} 
   </article>
   <div id="qrcode" align="center"> </div>
