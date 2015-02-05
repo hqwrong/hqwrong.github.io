@@ -9,7 +9,7 @@ tags: code
 一个变量绑定，具有两个属性，作用域（scope）和生命期（extent)。Lua的是静态作用域(static scope);所谓静态，即变量名总是索引前面最近定义它的地方，看文本就能分析出来。当然，全局变量是个例外。 一个Lua
 变量的生命期要到没有任何其他值索引它时才会结束。当一个外部变量被一个函数索引时，这个变量就被称为upvalue，函数就被称为闭包（closure）。
 
-- 如果函数b是函数a的子函数，那么b的upvalue要么是在a的栈上要么也是a的upvalue.
+- 如果函数b是函数a的子函数，那么b的upvalue要么是在a的local变量要么也是a的upvalue.
 
 例如：
 {% highlight lua %}
@@ -32,12 +32,27 @@ local function func0()
 end
 {% endhighlight %}
 
-_var2_既是_func2_也是_func1_的upvalue,虽然func1不直接引用_var2_,但是它每一次的执行都会生成_func2_的closure，因此间接索引了_var2_.
+var1是func1的local变量，是func3的upvalue。
+var2既是func2也是func1的upvalue,虽然func1不直接引用var2,但是它每一次的执行都会生成func2的closure，因此间接索引了var2.
 
 - 变量与函数的索引关系是静态的，可以在文本里分析出来
 
 Lua的分析upvalue的对应代码：
 {% highlight c linenos %}
+static int newupvalue (FuncState *fs, TString *name, expdesc *v) {
+  Proto *f = fs->f;
+  int oldsize = f->sizeupvalues;
+  checklimit(fs, fs->nups + 1, MAXUPVAL, "upvalues");
+  luaM_growvector(fs->ls->L, f->upvalues, fs->nups, f->sizeupvalues,
+                  Upvaldesc, MAXUPVAL, "upvalues");
+  while (oldsize < f->sizeupvalues) f->upvalues[oldsize++].name = NULL;
+  f->upvalues[fs->nups].instack = (v->k == VLOCAL);
+  f->upvalues[fs->nups].idx = cast_byte(v->u.info);
+  f->upvalues[fs->nups].name = name;
+  luaC_objbarrier(fs->ls->L, f, name);
+  return fs->nups++;
+}
+
 static int singlevaraux (FuncState *fs, TString *n, expdesc *var, int base) {
   if (fs == NULL)  /* no more levels? */
     return VVOID;  /* default is global */
@@ -64,9 +79,8 @@ static int singlevaraux (FuncState *fs, TString *n, expdesc *var, int base) {
 }
 {% endhighlight %}
 
-看Lua的lparser.c里，分析upvalue这段,
 注意15行里的递归, 如果既不是上层函数的local也不是上层函数的upvalue，那么它只能是全局变量。
-变量idx记录这个upvalue在上层函数的upvalue中或栈上的位置(第)。
+字段idx记录这个upvalue在上层函数中的位置, instack表示这个位置是在栈上还是在上层upvalue中.
 
 {% highlight c %}
 static void pushclosure (lua_State *L, Proto *p, UpVal **encup, StkId base,
