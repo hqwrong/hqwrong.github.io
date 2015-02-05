@@ -4,8 +4,9 @@ port:        4000
 highligher:  true
 markdown:    kramdown
 permalink:   date
+excerpt_separator: "\n\n\n"
+pagenate: 6
 rdiscount:
   input: GFM
 
 title: 王泓钦的blog
-excerpt_separator: "\n\n\n"

@@ -33,10 +33,12 @@ layout: common
     | <a href="{{page.next.url}}">{{page.next.title}}</a> 
     {% endif %} 
   </article>
-  <div id="qrcode" align="center"> </div>
+  <div id="qrcode-outer"> 
+    <div id="qrcode"> </div>
+  </div>
 </div>
 
 <script>
   var qrcode = new QRCode(document.getElementById("qrcode"))
-  qrcode.makeCode(document.URL)
+  qrcode.makeCode(document.location.hostname + document.location.pathname)
 </script>
