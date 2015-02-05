@@ -8,3 +8,4 @@ rdiscount:
   input: GFM
 
 title: 王泓钦的blog
+excerpt_separator: "\n\n\n"
