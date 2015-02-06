@@ -33,8 +33,8 @@ local function func0()
 end
 {% endhighlight %}
 
-var1是func1的local变量，是func3的upvalue。
-var2既是func2也是func1的upvalue,虽然func1不直接引用var2,但是它每一次的执行都会生成func2的closure，因此间接索引了var2.
+var1是func1的upvalue,同时是func1的上层函数func0的local变量。
+var2是func2的upvalue, 也是func2的上层函数func1的upvalue。虽然func1不直接引用var2,但是它每一次的执行都会生成func2的closure，因此间接索引了var2.
 
 - 变量与函数的索引关系是静态的，可以在文本里分析出来
 
