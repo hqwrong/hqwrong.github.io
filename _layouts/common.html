@@ -9,7 +9,6 @@
     <link href="/atom.xml" type="application/atom+xml" rel="alternate" title="Atom feed"/>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/css/sticky-footer.css" />
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/css/weixin_share.css"/>
     <link rel="stylesheet" href="/css/syntax.css"/>
@@ -22,18 +21,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body >
-    <div class="container">
-      <div class="row">
+    <header>
+      <span><a href="/tags/essay.html">闲记</a></span>
+        <span><a href="/tags/story.html">故事</a></span>
+        <span><a href="/tags/code.html">编程</a></span>
+        |
+      <span><a href="https://github.com/hqwrong" target="tab">GitHub</a></span>
+      <span><a href="http://www.douban.com/people/61430577/" target="tab">豆瓣</a></span>
+    </header>
+
+    <div id="content">
         {{ content }}
-      </div>
     </div>
 
-    <div class="footer" align="center"> <!-- use bootstrap footer -->
-      <small class="text-muted">
-        Hosted on <a href="http://pages.github.com">GitHub Pages</a> &mdash;
-        powered by <a href="http://jekyllrb.com/"> jekyll</a>
-      </small>
-    </div>
+    <footer>
+      <span>Hosted on <a href="http://pages.github.com">GitHub Pages</a></span>
+      &mdash;
+      <span>powered by <a href="http://jekyllrb.com/"> jekyll</a></span>
+    </footer>
   </body>
   <script>
     </script>

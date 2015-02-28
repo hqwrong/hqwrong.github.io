@@ -1,3 +1,8 @@
+body {
+    position: relative;
+    font-size: medium;
+}
+
 article {
     margin-top: 1.9em;
     margin-bottom: 1.9em;
@@ -12,6 +17,35 @@ p {
     font-size: 100%;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    width:100%;
+    height: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#content {
+    padding-top: 120px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left:  20px;
+    max-width:740px;
+    min-width:500px;
+    width: 50%;
+    margin: 0 auto;
+}
+
 #qrcode-outer {
     margin-top: 1.9em;
     margin-bottom: 2.7em;
@@ -21,8 +55,4 @@ p {
 #qrcode {
     display: inline-block;
     margin:auto;
-}
-
-body {
-    margin-top: 5em
 }
