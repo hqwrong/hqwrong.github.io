@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 孤独的爱情
+title: 不会说话的爱情
 tags: story
 ---
 
