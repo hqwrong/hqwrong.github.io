@@ -7,7 +7,7 @@ tags: code
 
 1. 把下面这个书签加到你的书签栏
   
-<a href="javascript:(function(){b='https://cdn.rawgit.com/hqwrong/kindle_vocab/master/';s=document.createElement('script');s.src=b+'sql.js';document.body.appendChild(s);s=document.createElement('script');s.src=b+'kindle.js';document.body.appendChild(s);})();">kindle_vocab</a>
+  <a href="javascript:(function(){b='http://cdn.lazyrobot.me/';s=document.createElement('script');s.src=b+'sql.js';document.body.appendChild(s);s=document.createElement('script');s.src=b+'kindle.js';document.body.appendChild(s);})();">kindle_vocab</a>
 
 2. 登录你的有道词典
 
