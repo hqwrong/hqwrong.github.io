@@ -1,3 +1,7 @@
+img, embed, object, video {
+  max-width: 100%;
+}
+
 body {
     position: relative;
     font-size: medium;
