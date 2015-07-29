@@ -6,7 +6,9 @@ tags: code
 
 三种方法。
 
-1. 屏蔽掉SIGPIPE的handler(推荐)
+- 屏蔽掉SIGPIPE的handler(推荐)
+
+    这个方法最通用
 
 {% highlight c %}
 #include <signal.h>
@@ -18,15 +20,15 @@ int sigign() {
 }
 {% endhighlight %}
 
-这个方法最通用
 
-2. setsockopt(..., SO_NOSIGPIPE, ...)
 
-  (不适用于linux)
+- setsockopt(..., SO_NOSIGPIPE, ...)
 
-3. send(fd,buf,sz, MSG_NOSIGNAL)
+    (不适用于linux)
 
-   send 又不能用于普通fd，失去了抽象性
+- send(fd,buf,sz, MSG_NOSIGNAL)
+
+    send 又不能用于普通fd，失去了抽象性
 
 
 上面的方法都阻止SIGPIPE， 而是让写函数返回-1, 并将errno设为EPIPE.
