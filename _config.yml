@@ -4,7 +4,7 @@ port:        4000
 highligher:  true
 markdown:    kramdown
 permalink:   date
-excerpt_separator: "\n\n\n"
+excerpt_separator: "\n-----\n"
 rdiscount:
   input: GFM
 

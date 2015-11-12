@@ -20,7 +20,7 @@ int sigign() {
 }
 {% endhighlight %}
 
-
+-----
 
 - setsockopt(..., SO_NOSIGPIPE, ...)
 
