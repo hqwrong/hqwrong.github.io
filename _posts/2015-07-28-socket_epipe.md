@@ -1,10 +1,12 @@
 ---
 layout: post
-title: 向被对方关闭的socket写入时，如何避免收到SIGPIPE
+title: 如何避免收到SIGPIPE时程序退出
 tags: code
 ---
 
-三种方法。
+当向一个被对方关闭的fd写入时,程序会收到SIGPIPE. *nix的默认策略是退出, 如果你的程序不是shell utility的话, 这可能不是你想要的结果.
+
+有三种方法刻意避免:
 
 - 屏蔽掉SIGPIPE的handler(推荐)
 
