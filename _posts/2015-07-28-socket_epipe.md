@@ -22,8 +22,6 @@ int sigign() {
 }
 {% endhighlight %}
 
------
-
 - setsockopt(..., SO_NOSIGPIPE, ...)
 
     (不适用于linux)

@@ -110,3 +110,14 @@ footer {
     margin: 0 auto;
 }
 
+.post-navi {
+    width: 100%
+}
+
+.post-navi .prev {
+    float: left
+}
+
+.post-navi .next {
+    float: right
+}

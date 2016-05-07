@@ -5,7 +5,6 @@ layout: common
 
 <article>
   <small>{{ page.date | date: "%Y-%m-%d" }} | </small>
-  <a href="/">回首页 | </a>
   <span class="dropdown">
     <a data-toggle="dropdown" class="_share_weixin" href="#">分享</a>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
@@ -23,15 +22,15 @@ layout: common
   {{content}}
   <hr/>
 
-  {% if page.previous.url %} 
-  <a href="{{page.previous.url}}">{{page.previous.title}}</a> |
-  {% endif %}
+  <div class="post-navi">
+    {% if page.previous.url %} 
+    <a href="{{page.previous.url}}" class="prev"> &lt{{page.previous.title}}</a>
+    {% endif %}
 
-  <a href="/">回首页</a>
-
-  {% if page.next.url %} 
-  | <a href="{{page.next.url}}">{{page.next.title}}</a> 
-  {% endif %} 
+    {% if page.next.url %} 
+    <a href="{{page.next.url}}" class="next">{{page.next.title}}&gt</a> 
+    {% endif %} 
+  </div>
 </article>
 
 <div id="qrcode-outer"> 
