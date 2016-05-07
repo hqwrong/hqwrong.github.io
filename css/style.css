@@ -87,7 +87,8 @@ footer {
     border-radius: 50%;
 
     display: inline-block;
-    margin-right: 10px
+    margin-left: 15px;
+    float:left;
 }
 
 .avatar-footer {
