@@ -121,3 +121,11 @@ footer {
 .post-navi .next {
     float: right
 }
+
+.entry {
+    margin-bottom: 20px;
+}
+
+.entry h2 {
+    margin-top: 10px;
+}
