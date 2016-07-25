@@ -79,7 +79,8 @@ static int singlevaraux (FuncState *fs, TString *n, expdesc *var, int base) {
 }
 {% endhighlight %}
 
-注意15行里的递归, 如果既不是上层函数的local也不是上层函数的upvalue，那么它只能是全局变量。
+注意29行里的递归, 如果既不是上层函数的local也不是上层函数的upvalue，那么它只能是全局变量。
+
 字段idx记录这个upvalue在上层函数中的位置, instack表示这个位置是在栈上还是在上层upvalue中.
 
 {% highlight c %}
