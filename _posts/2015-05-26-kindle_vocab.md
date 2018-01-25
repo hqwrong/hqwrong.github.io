@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 把kindle生词本导入有道生词本
-tags: code
+tag: project
 ---
 以下操作需在电脑上完成。
 

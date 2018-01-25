@@ -1,38 +1,28 @@
 ---
-layout: common
+layout: frontpage
 ---
 
-{% if page.tag != "all" %}
-<h1>{{ page.title }} </h1>
+<p> {{ content }} </p>
 <hr>
-{% endif %}
 
 {% for post in site.posts %}
   {% for tag in post.tags %}
     {% if tag == page.tag %}
-      {% assign found = "yes" %}
-    {% endif %}
-  {% endfor %}
-
-  {% if found == "yes" or page.tag == "all" %}
       <div class="entry">
         <small>
           {{ post.date | date_to_string }}
-          | 
-          <a href="/tags/{{post.tags}}.html"> {{ post.tags }} </a>
         </small>
-        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
       </div>
 
-      <!-- <article> -->
-      <!--   {{ post.excerpt }} -->
-      <!-- </article> -->
-      <!-- <p> -->
-      <!--   <a href="{{ post.url }}">... (more) </a> -->
-      <!-- </p> -->
-  {% endif %}
+     <p>
+       {{ post.desc | markdownify }}
+     </p>
 
-  {% assign found = "no" %}
+     <hr/>
+    {% endif %}
+  {% endfor %}
+
 {% endfor %}
 
 

@@ -4,40 +4,11 @@ layout: common
 
 
 <article>
-  <small>{{ page.date | date: "%Y-%m-%d" }} | </small>
-  <span class="dropdown">
-    <a data-toggle="dropdown" class="_share_weixin" href="#">分享</a>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-      <li>
-        <a href="javascript:void(function(){var d=document,e=encodeURIComponent,s1=window.getSelection,s2=d.getSelection,s3=d.selection,s=s1?s1():s2?s2():s3?s3.createRange().text:'',r='http://www.douban.com/recommend/?url='+e(d.location.href)+'&title='+e(d.title)+'&sel='+e(s)+'&v=1',w=450,h=330,x=function(){if(!window.open(r,'douban','toolbar=0,resizable=1,scrollbars=yes,status=1,width='+w+',height='+h+',left='+(screen.width-w)/2+',top='+(screen.height-h)/2))location.href=r+'&r=1'};if(/Firefox/.test(navigator.userAgent)){setTimeout(x,0)}else{x()}})()"><img src="/images/fw2douban1.png" alt="推荐到豆瓣" /></a>
-      </li>
-      <li>
-        <a href="#qrcode"> 微信扫一扫 </a>
-      </li>
-    </ul>
-  </span>
-
+    <small>{{ page.date | date: "%Y-%m-%d" }}| <a href="/">回首页 </a></small>
   <a href="#"><h1 style="text-align:center">{{page.title}}</h1></a>
   <hr/>
   {{content}}
   <hr/>
 
-  <div class="post-navi">
-    {% if page.previous.url %} 
-    <a href="{{page.previous.url}}" class="prev"> &lt{{page.previous.title}}</a>
-    {% endif %}
-
-    {% if page.next.url %} 
-    <a href="{{page.next.url}}" class="next">{{page.next.title}}&gt</a> 
-    {% endif %} 
-  </div>
 </article>
 
-<div id="qrcode-outer"> 
-  <div id="qrcode"> </div>
-</div>
-
-<script>
-  var qrcode = new QRCode(document.getElementById("qrcode"))
-  qrcode.makeCode(document.location.hostname + document.location.pathname)
-</script>
