@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 这不是一部喜剧 -- 评电影<驴得水>
+tag: review
 desc: 本文曾发表于公众号<文慧园三号>
 ---
 
