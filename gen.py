@@ -42,7 +42,6 @@ def gen_js(photos):
     var i = Math.floor(Math.random() * covers.length);
     
     document.getElementById("cover-image").setAttribute("src", covers[i][0])
-    document.getElementById("cover-desc").textContent = covers[i][1]
 
     '''
     with open(js_path, "w") as f:
