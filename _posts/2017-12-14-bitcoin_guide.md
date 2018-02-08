@@ -3,6 +3,7 @@ layout: post
 title: 比特币入门
 tag: bitcoin
 ---
+{%include toc.html %}
 
 ## 0. 比特币的诞生
 

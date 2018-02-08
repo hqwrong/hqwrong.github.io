@@ -4,6 +4,8 @@ title: 比特币备忘录
 tag: bitcoin
 ---
 
+{% include toc.html %}
+
 ## 1. 比特币是一场精心组织的旁氏骗局吗?
 
 不是。因为

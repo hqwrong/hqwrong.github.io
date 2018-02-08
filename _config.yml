@@ -9,4 +9,7 @@ excerpt_separator: "<!excerpt>"
 rdiscount:
   input: GFM
 
+kramdown:
+  parse_block_html: true
+
 title: 王泓钦的blog
