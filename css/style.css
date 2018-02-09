@@ -15,7 +15,7 @@ hr {
 }
 
 .main {
-    padding: 5% 8%;
+    padding: 3% 5%;
     max-width:960px;
     margin: 3em auto 0;
     background: #fff;
@@ -99,5 +99,13 @@ hr {
 .post {
     line-height: 1.7;
     font-size: 18px;
+}
+
+.post figure { 
+
+    /* remove code block's horizontal margin */
+
+    margin-left: 0;
+    margin-right:0;
 }
 
