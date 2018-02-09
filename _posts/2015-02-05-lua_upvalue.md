@@ -149,6 +149,6 @@ void luaF_close (lua_State *L, StkId level) {
 
 
 func0 执行中:
-![func0 执行中](/images/upvalue_in_func0.png "func0 执行中")
+![func0 执行中](/assets/images/upvalue_in_func0.png "func0 执行中")
 func0 执行后:
-![func0执行后](/images/upvalue_after_func0.png "func0 执行后")
+![func0执行后](/assets/images/upvalue_after_func0.png "func0 执行后")

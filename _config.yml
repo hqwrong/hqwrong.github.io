@@ -5,6 +5,7 @@ highligher:  true
 markdown:    kramdown
 permalink:   date
 excerpt_separator: "<!excerpt>"
+timezone: Asia/Chongqing
 
 rdiscount:
   input: GFM

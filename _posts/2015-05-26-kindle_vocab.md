@@ -19,19 +19,19 @@ tag: project
 
 3. 登录成功后，点击刚刚加的书签. 这时会在网页第一行出现按钮。
 
-  ![kindle](/images/kindle_file_button.png)
+  ![kindle](/assets/images/kindle_file_button.png)
 
 4. 点击按钮选择kindle的生词本文件.(理论上，它在你kindle磁盘下的 system/vocabulary/ 路径下)
 
-   ![](/images/kindle_choose_file.png)
+   ![](/assets/images/kindle_choose_file.png)
 
 5. 等待。
 
 6. 结束后会提示成功加入多少个单词, 它们在生词本的`kindle`分类下。
 
-   ![](/images/kindle_succeed.png)
+   ![](/assets/images/kindle_succeed.png)
 
-   ![](/images/kindle_class.png)
+   ![](/assets/images/kindle_class.png)
 
 
 

@@ -12,8 +12,8 @@ import shutil
 
 album_id = "1640488027"
 max_covers = 15
-photo_dir = "images/covers/"
-js_path = "js/cover.js"
+photo_dir = "assets/images/covers/"
+js_path = "assets/js/cover.js"
 
 def gen_photos():
     ret = []
