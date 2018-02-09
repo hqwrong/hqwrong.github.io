@@ -26,9 +26,6 @@ hr {
     color: #333;
 }
 
-.main p {
-}
-
 .main a {
     color: #428bca;
     text-decoration: none;
@@ -36,19 +33,40 @@ hr {
 
 /*** frontpage ***/
 
-.fp-right {
-    float: left;
-    max-width: 50%;
-}
-
-.fp-left {
-    float: left;
-    min-width: 40%
-}
-
 .fp-title {
     margin-top: 0;
 }
+
+
+@media (max-width: 700px) { /* for large screen */
+    .colum1 {
+        float: left;
+        min-width: 40%;
+    }
+
+    .colum2 {
+        float: left;
+        min-width: 50%;
+    }
+
+    .fp-right {
+        clear:both;
+        padding-top: 3em;
+    }
+}
+
+@media  (min-width: 700px) {  /* for small screen */
+    .fp-left {
+        float: left;
+        min-width: 40%
+    }
+
+    .fp-right {
+        float: left;
+        max-width: 50%;
+    }
+}
+
 
 /*** postlist ***/
 
