@@ -7,22 +7,47 @@ body {
     background: #eee;
 }
 
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-#content {
-    padding: 5% 10%;
+.main {
+    padding: 5% 8%;
     max-width:960px;
     margin: 3em auto 0;
     background: #fff;
     overflow: hidden; /* make it wrap float elements */
-}
-
-#content p {
     font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
     text-rendering: optimizeLegibility;
-    line-height: 1.7;
+    box-sizing: border-box;
     color: #333;
-    font-size: 18px;
-    position: relative;
+}
+
+.main p {
+}
+
+.main a {
+    color: #428bca;
+    text-decoration: none;
+}
+
+/*** frontpage ***/
+
+.fp-right {
+    float: left;
+    max-width: 50%;
+}
+
+.fp-left {
+    float: left;
+    min-width: 40%
+}
+
+.fp-title {
+    margin-top: 0;
 }
 
 /*** postlist ***/
@@ -35,9 +60,10 @@ body {
     margin-top: 10px;
 }
 
-.fp_title {
-    margin-top: 0;
+.entry p {
+    font-size: 14px;
 }
+
 
 /*** post ***/
 
@@ -47,15 +73,13 @@ body {
     margin: 0.8em 0em 1.8em;
 }
 
-.post-title a {
-    color: #428bca;
-}
-
 .post-toc {
     margin-bottom: 2em;
     color: #888;
 }
 
-.post-toc a {
-    color: #428bca;
+.post {
+    line-height: 1.7;
+    font-size: 18px;
 }
+

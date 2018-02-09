@@ -9,15 +9,15 @@ layout: frontpage
   {% for tag in post.tags %}
     {% if tag == page.tag %}
       <div class="entry">
-        <small>
-          {{ post.date | date_to_string }}
-        </small>
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      </div>
+          <small>
+              {{ post.date | date_to_string }}
+          </small>
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 
-     <p>
-       {{ post.desc | markdownify }}
-     </p>
+          <p>
+          {{ post.desc | markdownify }}
+          </p>
+      </div>
 
      <hr/>
     {% endif %}
