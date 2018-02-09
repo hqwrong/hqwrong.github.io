@@ -2,6 +2,7 @@
 layout: post
 title: Lua upvalue的实现
 tags: code
+published: true
 ---
 
 这几天在看lua的源码，看到upvalue这段，觉得很有意思，记录一下。
@@ -146,8 +147,11 @@ void luaF_close (lua_State *L, StkId level) {
 }
 {% endhighlight%}
 
+![cover.jpg]({{site.baseurl}}/_posts/cover.jpg)
+
 func0 执行中:
+
+
 ![func0 执行中](/images/upvalue_in_func0.png "func0 执行中")
 func0 执行后:
 ![func0执行后](/images/upvalue_after_func0.png "func0 执行后")
-
