@@ -4,19 +4,19 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>王泓钦的Blog</title>
-  <link href="http://hqwrong.github.io"/>
-  <link type="application/atom+xml" rel="self" href="http://hqwrong.github.io/atom.xml"/>
+  <title>lazyrobot.me</title>
+  <link href="http://lazyrobot.me"/>
+  <link type="application/atom+xml" rel="self" href="http://lazyrobot.me/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://hqwrong.github.io</id>
+  <id>http://lazyrobot.me</id>
   <author>
-    <name>王泓钦</name>
+    <name>hqwrong</name>
   </author>
 
   {% for post in site.posts %}
   <entry>
-    <id>http://hqwrong.github.io{{ post.id }}</id>
-    <link type="text/html" rel="alternate" href="http://hqwrong.github.io{{ post.url }}"/>
+    <id>http://lazyrobot.me{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="http://lazyrobot.me{{ post.url }}"/>
     <title>{{ post.title | xml_escape }}</title>
     <updated>{{ post.date | date_to_xmlschema }}</updated>
     <content type="html">{{ post.content | xml_escape }}</content>
