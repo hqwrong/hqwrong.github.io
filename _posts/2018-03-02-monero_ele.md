@@ -58,7 +58,7 @@ $$ b \odot G = B $$
 
    $$ R = r \odot G $$
 
-   $$ S = \hbar(r \odot A) \odot G + B   \tag(1) $$
+   $$ S = \hbar(r \odot A) \odot G + B   \tag{1} $$
 
    其中，
    
