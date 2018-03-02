@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 门罗币技术要素
-tag: bitcoin
+tag: draft
 mathjax: true
 ---
 

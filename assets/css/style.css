@@ -24,6 +24,7 @@ hr {
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
     color: #333;
+    overflow-wrap: break-word;
 }
 
 .main a {

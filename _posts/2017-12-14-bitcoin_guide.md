@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 比特币入门
+title: 比特币基本原理
 tag: bitcoin
 ---
 {%include toc.html %}
