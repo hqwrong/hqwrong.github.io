@@ -59,7 +59,8 @@ hr {
 @media  (min-width: 700px) {  /* for large screen */
     .fp-left {
         float: left;
-        min-width: 40%
+        min-width: 35%;
+        margin-right: 5%;
     }
 
     .fp-right {

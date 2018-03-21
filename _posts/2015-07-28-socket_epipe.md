@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 如何避免收到SIGPIPE时程序退出
-tags: code
+tag: code
 ---
 
 当向一个被对方关闭的fd写入时,程序会收到SIGPIPE. *nix的默认策略是退出, 如果你的程序不是shell utility的话, 这可能不是你想要的结果.

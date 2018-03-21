@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 记一次微信聊天
-tag: review
+tag: note
 ---
 
 前几天，一个发小来找我了，微信上。

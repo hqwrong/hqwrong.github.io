@@ -1,4 +1,4 @@
 ---
 layout: postlist
-tag: review
+tag: note
 ---

@@ -4,7 +4,7 @@ layout: nil
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
-  <title>lazyrobot.me</title>
+  <title>lazyrobot.me - {{ page.name }}</title>
   <link href="http://lazyrobot.me"/>
   <link type="application/atom+xml" rel="self" href="http://lazyrobot.me/atom.xml"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
@@ -15,6 +15,7 @@ layout: nil
 
   {% for post in site.posts %}
   {% if post.tag != "draft" %}
+  {% if post.tag == page.tag or page.tag == "ALL" %}
       <entry>
         <id>http://lazyrobot.me{{ post.id }}</id>
         <link type="text/html" rel="alternate" href="http://lazyrobot.me{{ post.url }}"/>
@@ -23,6 +24,8 @@ layout: nil
         <content type="html">{{ post.content | xml_escape }}</content>
       </entry>
   {% endif %}
+  {% endif %}
   {% endfor %}
  
 </feed>
+

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 这不是一部喜剧
-tag: review
+tag: note
 desc: |
   电影<驴得水>
 

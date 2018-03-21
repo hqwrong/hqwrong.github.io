@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Lua upvalue的实现
-tags: code
-published: true
+tag: code
 ---
 
 这几天在看lua的源码，看到upvalue这段，觉得很有意思，记录一下。
