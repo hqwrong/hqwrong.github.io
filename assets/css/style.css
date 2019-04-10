@@ -4,7 +4,6 @@ img, embed, object, video {
 
 body {
     height: 100%;
-    background: #eee;
 }
 
 hr {
@@ -17,7 +16,8 @@ hr {
 .main {
     padding: 2rem;
     max-width:960px;
-    margin: 3em auto 0;
+    margin:auto;
+
     background: #fff;
     overflow: hidden; /* make it wrap float elements */
     font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
