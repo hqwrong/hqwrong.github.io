@@ -14,16 +14,16 @@ hr {
 }
 
 .main {
-    padding: 2rem;
+    padding: 1.5rem; /* 1.5 is good for mobile */
     max-width:960px;
     margin:auto;
 
-    background: #fff;
+    color: #333; /* comfortable for reading */
+
     overflow: hidden; /* make it wrap float elements */
     font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
     text-rendering: optimizeLegibility;
     box-sizing: border-box;
-    color: #333;
     overflow-wrap: break-word;
 }
 
