@@ -17,18 +17,3 @@ layout: frontpage
 
    ![](/assets/images/qrcode.jpg)
 
-### 通过打赏支持我的写作
-
-- 门罗币地址
-
-  47zsjDiVsZAS41hAWhnHzdJmSrJSm4eWVH9PrEE29zbtKAKLP4cVKKpZgEVrR2C3B39ZpRq1wQEU81qwf3u61nvHRNw7Cqk
-
-- 比特币地址
-
-  1DezhQ4C5WSfMEqsYd9aE6theohPvzBBrD
-
-- 微信打赏
-
-  ![](/assets/images/weixin_tip.jpg)
-
-
