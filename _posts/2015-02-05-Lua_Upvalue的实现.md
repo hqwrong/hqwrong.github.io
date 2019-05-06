@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lua upvalue的实现
+title: Lua Upvalue的实现
 tag: code
 ---
 

@@ -8,6 +8,4 @@ layout: frontpage
 
 - [订阅笔记](/atom/note.xml)
 
-- [订阅比特币](/atom/bitcoin.xml)
-
 - [订阅编程](/atom/code.xml)
